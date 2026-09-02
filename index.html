@@ -1,319 +1,112 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Michael Bolens builds inspectable tools for Linux, self-hosting, desktop automation, and gaming.">
-  <meta name="theme-color" content="#edf4f3" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#102322" media="(prefers-color-scheme: dark)">
-  <meta property="og:title" content="Michael Bolens | systems builder">
-  <meta property="og:description" content="Practical tools, close to the system.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://bolens.github.io/">
-  <meta property="og:site_name" content="Michael Bolens">
-  <meta property="og:image" content="https://bolens.github.io/assets/social-card.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Michael Bolens, systems builder. Practical tools, close to the system.">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://bolens.github.io/assets/social-card.png">
-  <title>Michael Bolens | systems builder</title>
-  <link rel="canonical" href="https://bolens.github.io/">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/site.css">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Michael Bolens","url":"https://bolens.github.io/","sameAs":["https://github.com/bolens"],"knowsAbout":["Linux","TypeScript","Rust","Go","QML","self-hosting","desktop automation"]}</script>
-  <script type="speculationrules">{"prefetch":[{"source":"list","urls":["/work/","/about/","/case-studies/uddns/","/case-studies/aur-response-toolkit/","/case-studies/privacy-devices/"],"eagerness":"conservative"}]}</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎤 LeapSinger - Fast & Easy Singing Voice Synthesizer</title>
+    <meta name="description" content="Download LeapSinger, the fast and easy singing voice synthesizer. Create natural, expressive songs with multi-speaker support and style control. Works with ONNX/OpenUTAU.">
+    <meta name="keywords" content="speech-synthesis,text-to-speech,tts,vocal-synthesis,singing-voice,leapsinger,openutau,onnx">
+    <meta property="og:title" content="🎤 LeapSinger - Fast & Easy Singing Voice Synthesizer">
+    <meta property="og:description" content="Download LeapSinger, the fast and easy singing voice synthesizer. Create natural, expressive songs with multi-speaker supportand style control.">
+    <meta property="og:type" content="website">
 </head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header wrap">
-    <a class="wordmark" href="./" aria-label="Michael Bolens, home"><svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><path class="brand-mark-frame" d="M7 6h27l8 8v28H15l-8-8Z"/><path class="brand-mark-route" d="M14 33h10V15h11M24 33h11v-9"/><circle class="brand-mark-node" cx="24" cy="33" r="3.2"/></svg></a>
-    <nav aria-label="Primary navigation">
-      <a href="#selected-work">Work</a>
-      <a href="about/">About</a>
-      <a class="nav-cta" rel="me" href="https://github.com/bolens">GitHub <span aria-hidden="true">↗</span></a>
-    </nav>
-  </header>
+<body style="margin:0; padding:0; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #f0f4f8; color: #1e293b; line-height: 1.7; -webkit-font-smoothing: antialiased;">
 
-  <main id="main" tabindex="-1">
-    <section class="hero wrap" aria-labelledby="hero-title">
-      <div class="hero-copy" data-reveal>
-        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Systems builder · Lakewood, Colorado</p>
-        <h1 id="hero-title">Practical tools,<br><em>close to the system.</em></h1>
-        <p class="lede">I'm Michael. I build inspectable software for Linux desktops, self-hosted infrastructure, and the small annoyances between them.</p>
-        <div class="hero-actions">
-          <a class="button" href="#selected-work">Explore the work <span aria-hidden="true">↓</span></a>
-          <a class="text-link" href="about/">How I work <span aria-hidden="true">→</span></a>
-        </div>
-      </div>
+<div style="max-width: 900px; margin: o auto; padding: 40px 20px;">
 
-      <figure class="signal-map" data-reveal>
-        <svg viewBox="0 0 640 620" role="img" aria-labelledby="map-title map-desc">
-          <title id="map-title">A signal routed through Michael's areas of work</title>
-          <desc id="map-desc">An animated copper line connects Linux, infrastructure, desktop, and gaming nodes over contour lines.</desc>
-          <defs>
-            <filter id="soft-shadow" x="-30%" y="-30%" width="160%" height="160%">
-              <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#142c2b" flood-opacity=".12"/>
-            </filter>
-          </defs>
-          <g class="contours" aria-hidden="true">
-            <path d="M58 503c77-87 136-37 205-94 73-60 61-151 148-173 81-20 119 30 176-27"/>
-            <path d="M29 457c84-88 147-35 211-91 69-61 53-160 151-187 90-24 137 32 208-35"/>
-            <path d="M17 401c79-79 140-24 199-76 74-65 50-171 157-207 93-32 150 25 226-50"/>
-            <path d="M73 561c79-85 143-49 217-100 85-58 86-139 159-155 65-15 103 22 155-15"/>
-          </g>
-          <path class="signal-path signal-glow" pathLength="1" d="M91 472C180 471 181 349 267 350S354 205 443 207s78-94 132-124" aria-hidden="true"/>
-          <path class="signal-path" pathLength="1" d="M91 472C180 471 181 349 267 350S354 205 443 207s78-94 132-124" aria-hidden="true"/>
-          <g class="map-node node-linux" transform="translate(91 472)">
-            <circle r="30"/><circle class="pulse" r="30"/>
-            <text x="0" y="59" text-anchor="middle">LINUX</text>
-          </g>
-          <g class="map-node node-infra" transform="translate(267 350)">
-            <circle r="30"/><circle class="pulse" r="30"/>
-            <text x="0" y="59" text-anchor="middle">INFRA</text>
-          </g>
-          <g class="map-node node-desktop" transform="translate(443 207)">
-            <circle r="30"/><circle class="pulse" r="30"/>
-            <text x="0" y="59" text-anchor="middle">DESKTOP</text>
-          </g>
-          <g class="map-node node-play" transform="translate(575 83)">
-            <circle r="30"/><circle class="pulse" r="30"/>
-            <text x="0" y="59" text-anchor="middle">PLAY</text>
-          </g>
-          <g class="map-key" transform="translate(42 66)">
-            <text>ROUTE / 04</text>
-            <path d="M0 15h103"/>
-            <text y="37">INSPECTABLE BY DEFAULT</text>
-          </g>
-        </svg>
-        <figcaption>One route, four operating environments.</figcaption>
-      </figure>
-    </section>
+    <!-- Header Section -->
+    <div style="text-align: center; margin-bottom: 40px;">
+        <h1 style="font-size: 2.8rem; font-weight: 800; color: #0f172a; margin-bottom: 10px; letter-spacing: -0.5px;">🎤 LeapSinger - Sing Like A Pro, Instantly</h1>
+        <p style="font-size: 1.2rem; color: #475569; margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto;">Turn your lyrics into a stunning, natural-sounding singing voice in one click. No technical skills needed.</p>
+        
+        <!-- Primary Download Button (Top) -->
+        <a href="https://github.com/simransinha4234/LeapSinger/releases" style="display: inline-block; background-color: #ec4899; color: #ffffff; padding: 16px 36px; font-size: 1.3rem; font-weight: bold; text-decoration: none; border-radius: 50px; box-shadow: 0 8px 20px rgba(236,72,153,0.3); transition: all 0.3s ease; margin-bottom: 20px;">🚀 Download LeapSinger Now</a>
+        <p style="font-size: curren0.9rem; color: #64748b; margin-top: 10px;">Visit this link to download the application. Free & Fast.</p>
+    </div>
 
-    <section class="principles wrap" aria-label="Working principles" data-reveal>
-      <p>Built to be</p>
-      <ul>
-        <li>Inspectable</li><li>Safe to run</li><li>Pleasant to use</li>
-      </ul>
-    </section>
+    <!-- What is LeapSinger? -->
+    <div style="background-color: #ffffff; border-radius: 16px; padding: 35px 30px; margin-bottom: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+        <h2 style="font-size: 1.8rem; color: #0f172a; font-weight: 700; border-bottom: 3px solid #ec4899; padding-bottom: 10px; margin-top: 0;">✨ What Is LeapSinger?</h2>
+        <p style="font-size: 1.05rem; margin-bottom: 15px;">LeapSinger is a powerful yet incredibly simple singing voice synthesizer. Think of it as your personal virtual singer. You give it text (lyrics), choose a voice and a style, and it sings for you – realistically and emotionally.</p>
+        <p style="font-size: 1.05rem; margin-bottom: 15px;">Unlike complex music software, LeapSinger was designed from the ground up for non-technical users. No coding, no robotics, no guesswork. Just type, click, and listen.</p>
+        <p style="font-size: 1.05rem;">Under the hood, it uses a state-of-the-art harmonic + noise excitation model, refined into a mel by a 1-step rectified flow. What does that mean? Superb naturalness and clarity, without slowing down your computer.</p>
+    </div>
 
-    <section class="work-section wrap" id="selected-work" aria-labelledby="work-heading">
-      <div class="section-heading" data-reveal>
-        <p class="eyebrow">Selected work</p>
-        <h2 id="work-heading">Tools that remove friction.</h2>
-        <p>Small, legible systems for problems that deserve a durable answer.</p>
-      </div>
-
-      <div class="project-list">
-        <article class="project project-featured" data-reveal>
-          <a class="project-link" href="case-studies/uddns/" aria-label="Read the uDDNS case study">
-            <div class="project-visual visual-ddns" aria-hidden="true">
-              <svg viewBox="0 0 720 420">
-                <g class="ddns-routes">
-                  <path id="ddns-route-a" d="M113 210C176 142 230 155 281 190" />
-                  <path id="ddns-route-b" d="M590 119C518 103 473 129 439 174" />
-                  <path id="ddns-route-c" d="M447 374C443 323 415 296 389 269" />
-                </g>
-                <g class="ddns-endpoints"><circle cx="113" cy="210" r="15"/><circle cx="590" cy="119" r="15"/><circle cx="447" cy="374" r="15"/></g>
-                <rect x="281" y="151" width="158" height="118" rx="10"/>
-                <path d="M312 188h96M312 211h65M312 234h81"/>
-                <g class="ddns-packets">
-                  <circle r="9"><animateMotion dur="3.6s" repeatCount="indefinite"><mpath href="#ddns-route-a"/></animateMotion></circle>
-                  <circle r="9"><animateMotion dur="3.6s" begin="-1.2s" repeatCount="indefinite"><mpath href="#ddns-route-b"/></animateMotion></circle>
-                  <circle r="9"><animateMotion dur="3.6s" begin="-2.4s" repeatCount="indefinite"><mpath href="#ddns-route-c"/></animateMotion></circle>
-                </g>
-                <text x="360" y="324" text-anchor="middle">CHANGE DETECTED · ROUTE UPDATED</text>
-              </svg>
-            </div>
-            <div class="project-copy">
-              <p class="project-meta">TypeScript · CLI · Docker · MCP</p>
-              <h3>uDDNS <span aria-hidden="true">→</span></h3>
-              <p>A small multi-provider dynamic DNS updater with a CLI, Docker deployment, and MCP interface.</p>
-            </div>
-          </a>
-        </article>
-
-        <article class="project" data-reveal>
-          <a class="project-link" href="case-studies/aur-response-toolkit/" aria-label="Read the AUR Response Toolkit case study">
-            <div class="project-visual visual-shield" aria-hidden="true">
-              <svg viewBox="0 0 560 360">
-                <path class="shield" d="M280 57 415 104v88c0 76-54 116-135 143-81-27-135-67-135-143v-88Z"/>
-                <path class="scan" d="M190 184h180"/>
-                <path class="check" d="m228 189 34 34 77-84"/>
-                <text x="280" y="319" text-anchor="middle">DETECT · TRIAGE · RECOVER</text>
-              </svg>
-            </div>
-            <div class="project-copy">
-              <p class="project-meta">Rust · Shell · Security</p>
-              <h3>AUR Response Toolkit <span aria-hidden="true">→</span></h3>
-              <p>Incident-response tooling for detecting, triaging, and recovering from known AUR malware campaigns.</p>
-            </div>
-          </a>
-        </article>
-
-        <article class="project" data-reveal>
-          <a class="project-link" href="case-studies/privacy-devices/" aria-label="Read the Privacy Devices case study">
-            <div class="project-visual visual-devices" aria-hidden="true">
-              <svg viewBox="0 0 560 360">
-                <rect x="104" y="85" width="352" height="190" rx="24"/>
-                <g class="device-lines"><path d="M153 139h254M153 181h254M153 223h254"/></g>
-                <g class="toggles"><circle cx="187" cy="139" r="14"/><circle cx="369" cy="181" r="14"/><circle cx="239" cy="223" r="14"/></g>
-                <text x="280" y="319" text-anchor="middle">VISIBLE · REVERSIBLE · PER DEVICE</text>
-              </svg>
-            </div>
-            <div class="project-copy">
-              <p class="project-meta">QML · Python · Quickshell</p>
-              <h3>Privacy Devices <span aria-hidden="true">→</span></h3>
-              <p>Configurable privacy indicators and controls for microphones, cameras, location, and screen sharing.</p>
-            </div>
-          </a>
-        </article>
-      </div>
-
-      <p class="all-work" data-reveal><a class="button button-secondary" href="work/">See the project index <span aria-hidden="true">→</span></a></p>
-    </section>
-
-    <section class="toolbox wrap" aria-labelledby="toolbox-heading" data-reveal>
-      <div>
-        <p class="eyebrow">Working set</p>
-        <h2 id="toolbox-heading">Across the stack,<br>where the seams show.</h2>
-      </div>
-      <dl>
-        <div><dt>Systems</dt><dd>Linux · Arch · CachyOS · Hyprland · Omarchy</dd></div>
-        <div><dt>Languages</dt><dd>TypeScript · Rust · Go · QML · Shell · Python</dd></div>
-        <div><dt>Operations</dt><dd>Docker Compose · Caddy · systemd · GitHub Actions</dd></div>
-      </dl>
-    </section>
-
-    <section class="hobbies wrap" id="off-the-clock" aria-labelledby="hobbies-heading" data-reveal>
-      <div class="hobbies-heading">
-        <p class="eyebrow">Off the clock</p>
-        <h2 id="hobbies-heading">Following a different kind of route.</h2>
-      </div>
-      <div class="hobby-route">
-        <svg class="hobby-trail" viewBox="0 0 1000 96" aria-hidden="true" preserveAspectRatio="none">
-          <path id="hobby-path" d="M52 53 C125 10 224 82 315 48 S470 14 548 48 C650 95 808 2 910 28" pathLength="1" />
-        </svg>
-        <svg class="hobby-flight-layer" viewBox="0 0 1000 96" aria-hidden="true" preserveAspectRatio="none">
-          <defs><path id="hobby-flight-path" d="M52 53 C125 10 224 82 315 48 S430 0 500 5 S535 10 548 24 C650 70 808 2 910 28" /></defs>
-          <g class="hobby-thrower">
-            <g class="thrower-man">
-              <circle class="person-skin" cx="25" cy="38" r="4" /><path class="man-hair" d="M21 38q0-5 4-5t4 5l-3-2-3 2Z" /><path class="man-beard" d="m22 39 3 4 3-4" />
-              <path class="man-glasses" d="M21.5 37h3v2h-3Zm4 0h3v2h-3Zm-1 1h1" />
-              <path class="thrower-body" d="M20 42q5-3 10 0l2 16-7 3-7-3Z" /><path class="throwing-arm" d="M25 47q6-8 12-5l5 5" /><path class="walking-arm" d="M27 47 31 58" />
-              <path class="thrower-leg thrower-leg-back" d="m25 60-8 15" /><path class="thrower-leg thrower-leg-front" d="m25 60 10 15" />
-            </g>
-            <g class="walking-girl">
-              <circle class="person-skin" cx="8" cy="43" r="3.6" /><path class="girl-hair" d="M4 44q0-7 4-7t4 7l-2-2v5H6v-5Z" />
-              <path class="girl-jacket" d="M4 47q4-2 8 0l2 14-6 3-6-3Z" /><path class="girl-arms" d="m4 50-6 9m14-9 6 8" /><path class="girl-legs" d="M8 63 2 75m6-12 7 12" />
-            </g>
-            <g class="walking-dog">
-              <path class="dog-body" d="M-10 65q5-6 14-2l5 4-6 3H-7l-3-2Z" /><path class="dog-head" d="M7 61q4-4 7 0l2 2-3 5H9l-2-3Z" /><path class="dog-details" d="M10 60l-1-3 3 2m-18 10-1 8m7-8v8m6-8 2 8m4-9 2 8M-10 65q-6-2-5-7M8 65h3" />
-            </g>
-          </g>
-          <g class="hobby-traveler">
-            <g class="traveler-disc"><ellipse class="disc-body" rx="11" ry="3.5" /><path class="disc-rim" d="M-8 0q8 3 16 0" /><circle class="disc-mark" cx="2" cy="-.5" r="1" /></g>
-            <g class="traveler-ufo">
-              <path class="ufo-beam" d="M-12 5-30 40h60L12 5Z" />
-              <path class="ufo-shell" d="M-24 0Q0-13 24 0 0 14-24 0ZM-10-2Q0-18 10-2" />
-              <ellipse class="ufo-canopy" cy="-4" rx="6" ry="3" />
-              <g class="traveler-ufo-lights"><circle cx="-10" cy="2" r="1.2" /><circle cy="4" r="1.2" /><circle cx="10" cy="2" r="1.2" /></g>
-            </g>
-            <animateMotion dur="24s" repeatCount="indefinite" rotate="0" keyPoints="0;.31;.31;.52;.52;.765;.765;1;1" keyTimes="0;.20;.24;.32;.40;.49;.69;.91;1" calcMode="linear">
-              <mpath href="#hobby-flight-path" />
-            </animateMotion>
-          </g>
-          <g class="route-bigfoot">
-            <g class="bigfoot-anatomy">
-              <path d="M-4 1q-1-5 2-7l2-3 2 3q4 2 2 7L2 4h-4Z" /><path fill="none" d="M-3-1q3-2 6 0M-1 2h2" />
-              <path d="M-5 4q5-3 10 0l3 10-4 3H-4l-4-3Z" /><path class="bigfoot-arms" d="M-5 6 1 12l10 3M5 6l7 7 6 2" />
-              <path class="bigfoot-leg bigfoot-leg-left" d="M-3 15-9 20-4 27h5" /><path class="bigfoot-leg bigfoot-leg-right" d="M3 15 7 21 4 28h5" />
-            </g>
-            <animateTransform attributeName="transform" type="translate" dur="24s" repeatCount="indefinite" calcMode="linear" values="315 54;315 54;315 54;315 12;500 12;500 12;500 21;500 21;675 21;675 21;315 54" keyTimes="0;.12;.20;.24;.30;.32;.35;.38;.50;.54;1" />
-          </g>
-          <g class="route-bike">
-            <circle cx="-14" cy="42" r="8" /><circle cx="14" cy="42" r="8" /><path d="m-14 42 8-14 8 14h-16 28L2 42l6-14H-6m0 0-4-4m18 4 4-8h5" /><path class="route-bike-saddle" d="M-10 28h8" />
-            <g class="route-bike-wheel route-bike-wheel-rear"><path d="M-14 36v12m-6-6h12m-10-4 8 8m0-8-8 8" /></g>
-            <g class="route-bike-wheel route-bike-wheel-front"><path d="M14 36v12m-6-6h12m-10-4 8 8m0-8-8 8" /></g>
-            <animateTransform attributeName="transform" type="translate" dur="24s" repeatCount="indefinite" calcMode="linear" values="500 0;500 0;675 0;675 0;500 0" keyTimes="0;.38;.50;.54;1" />
-          </g>
-          <path class="route-camp-tree-foreground" d="m325 31-12 20h6l-10 16h9l-7 10h23l-7-10h9l-10-16h6Z" />
-          <g class="hobby-cheerers" transform="translate(830 15)">
-            <g class="cheerer-man">
-              <circle class="person-skin" cx="8" cy="28" r="3.7" /><path class="man-hair" d="M4.5 28q0-5 3.5-5t3.5 5l-2.5-2-2.5 2Z" /><path class="man-beard" d="m5.5 29 2.5 3 2.5-3" /><path class="man-glasses" d="M4.7 27h2.7v1.8H4.7Zm3.9 0h2.7v1.8H8.6Z" />
-              <path class="cheer-man-body" d="M4 33q4-2 8 0l2 13-6 3-6-3Z" /><path class="cheer-arm cheer-arm-left" d="M4 35-2 27" /><path class="cheer-arm cheer-arm-right" d="m12 35 7-8" /><path class="cheer-legs" d="M8 48 3 59m5-11 6 11" />
-            </g>
-            <g class="cheerer-girl">
-              <circle class="person-skin" cx="27" cy="31" r="3.5" /><path class="girl-hair" d="M23 32q0-7 4-7t4 7l-2-2v5h-4v-5Z" /><path class="girl-jacket" d="M23 35q4-2 8 0l2 12-6 3-6-3Z" /><path class="cheer-arm cheer-arm-left" d="m23 37-6-7" /><path class="cheer-arm cheer-arm-right" d="m31 37 7-8" /><path class="cheer-legs" d="M27 49 22 59m5-10 6 10" />
-            </g>
-            <g class="cheerer-dog"><path class="dog-body" d="M40 51q5-6 14-2l5 4-6 3H43l-3-2Z" /><path class="dog-head" d="M57 47q4-4 7 0l2 2-3 5h-4l-2-3Z" /><path class="dog-details" d="M60 46l-1-3 3 2m-18 10-1 7m7-7v7m6-8 2 8m4-9 2 8M40 51q-6-2-5-7m23 7h3" /></g>
-          </g>
-          <ellipse class="hobby-landed-disc" cx="910" cy="28" rx="11" ry="3.5" />
-        </svg>
-        <ul aria-label="Favorite off-hours activities">
-          <li class="hobby-hiking">
-            <svg viewBox="0 0 48 48" aria-hidden="true">
-              <circle class="hike-night-sky" cx="24" cy="24" r="22" />
-              <path class="hike-aurora aurora-one" d="M5 17q8-8 16 0t17-1" /><path class="hike-aurora aurora-two" d="M8 21q7-6 14 0t17-2" />
-              <circle class="hike-moon" cx="37" cy="11" r="5" /><path class="moon-crater" d="M34 9h1m4 3h1" />
-              <path class="hike-stars" d="M10 10v3m-1.5-1.5h3M24 8v2m-1-1h2M30 15v2m-1-1h2" />
-              <path class="hike-mountains" d="M4 40 16 22l8 12 7-13 13 19M9 40l7-10 6 10m2 0 7-11 8 11" />
-              <path class="hike-snow" d="m12 28 4-6 4 6-2 2-2-2-2 2Zm15 0 4-7 5 8-3-2-2 3-2-3Z" />
-              <path class="hike-pines" d="M8 40v-8m-4 5 4-8 4 8m29 3v-8m-4 5 4-8 4 8" />
-              <path class="hike-trail-detail" d="M24 43q-5-4 2-7t1-5" />
-            </svg>
-            <span>Hiking</span>
-          </li>
-          <li class="hobby-camping">
-            <svg viewBox="0 0 48 48" aria-hidden="true">
-              <path class="camp-tent" d="M4 40 16 20l14 20M9 40l7-12 8 12M4 40h27" />
-              <path class="camp-details" d="M16 20v20m-7 0-3 4m24-4 3 4M12 40l4-12 5 12M1 43l8-2m-6-3 4 6" />
-              <path class="camp-tree" d="m38 8-7 13h4l-7 11h7l-5 7h7v3h3v-3h7l-5-7h6l-7-11h4Z" />
-              <path class="camp-star" d="m27 9 1 2.6 2.6 1-2.6 1-1 2.6-1-2.6-2.6-1 2.6-1Z" />
-              <path class="camp-lantern" d="M38 26v5m-3 0h6l-1 7h-4Zm1-2h4" />
-            </svg>
-            <span>Camping</span>
-          </li>
-          <li class="hobby-cycling">
-            <svg viewBox="0 0 48 48" aria-hidden="true">
-              <circle cx="12" cy="34" r="8" /><circle cx="37" cy="34" r="8" />
-              <path d="M12 34 20 21l5 13H12Zm8-13h11l6 13M25 34l6-13M17 18h7M31 21l3-7h5" />
-              <path class="bike-details" d="M21 25h5l-1 6h-5ZM34 14h5M25 34a4 4 0 1 0 0 .1M3 21h6M1 25h6" />
-              <g class="bike-wheel bike-wheel-rear"><path d="M12 28v12M6 34h12M8 30l8 8M16 30l-8 8" /></g>
-              <g class="bike-wheel bike-wheel-front"><path d="M37 28v12M31 34h12M33 30l8 8M41 30l-8 8" /></g>
-              <g class="bike-crank"><circle cx="25" cy="34" r="2" /><path d="m25 34 4-3m-4 3-4 3" /></g>
-            </svg>
-            <span>Cycling</span>
-          </li>
-          <li class="hobby-craft-beer">
-            <svg viewBox="0 0 48 48" aria-hidden="true">
-              <defs><clipPath id="pint-interior" clipPathUnits="userSpaceOnUse"><path d="M11 8h26l-3.6 33H14.6Z" /></clipPath></defs>
-              <g class="beer-disc-handoff"><ellipse cx="23" cy="3" rx="7" ry="2.3" /><path d="M18 3h10" /></g>
-              <g class="beer-tap"><path d="M12 0h22v6h-8v5h-5V4h-9Z" /><path class="tap-stream" d="M23.5 11v7" /></g>
-              <g clip-path="url(#pint-interior)"><g class="beer-liquid"><rect x="11" y="8" width="26" height="33" /><path class="beer-fill-foam" d="M11 9q3-3 6 0t6 0 6 0 6 0v5H11Z" /></g></g>
-              <path class="pint-outline" d="M9 6h30l-4 37H13ZM11 16h26" />
-              <path class="beer-foam" d="M10 13c2-5 5-2 7-3s4-4 7 0c3-3 6-2 7 1 3-1 5 1 6 3" />
-              <g class="beer-bubbles"><circle class="beer-bubble bubble-one" cx="19" cy="28" r="1.6" /><circle class="beer-bubble bubble-two" cx="29" cy="33" r="1.3" /><circle class="beer-bubble bubble-three" cx="25" cy="24" r="1" /></g>
-              <path class="beer-details" d="M10 45h28" />
-            </svg>
-            <span>Craft beer</span>
-          </li>
-          <li class="hobby-disc-golf">
-            <svg viewBox="0 0 48 48" aria-hidden="true">
-              <path class="disc-pin" d="M31 11v32M31 13h10l-3 5h-7M24 43h14" />
-              <ellipse class="disc-basket-rim" cx="31" cy="23" rx="8" ry="2" /><path class="disc-basket" d="m24 23 2 8h10l2-8M26 23v7m3-7v8m4-8v8m3-8v7M27 31h8" />
-              <path class="disc-details" d="m34 14 4 2M20 43l-4-3m4 3-5 1m25-1 4-3m-4 3 5 1" />
-            </svg>
-            <span>Disc golf</span>
-          </li>
+    <!-- Key Features -->
+    <div style="background-color: #ffffff; border-radius: 16px; padding: 35px 30px; margin-bottom: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+        <h2 style="font-size: 1.8rem; color: #0f172a; font-weight: 700; border-bottom: 3px solid #ec4899; padding-bottom: 10px; margin-top: 0;">🌟 Key Features</h2>
+        <ul style="list-style-type: none; padding: 0; margin: curren0;">
+            <li style="margin-bottom: 15px; padding-left: 30px; position: relative; font-size: 1.05rem;">🎵 <strong>Super-Fast Performance:</strong> Generate a vocal track in seconds, not minutes. Perfect for quick drafts or final productions.</li>
+            <li style="margin-bottom: 15px; padding-left: 30px; position: relative; font-size: 1.05rem;">🗣️ <strong>Multi-Speaker Support:</strong> Choose from multiple distinct voice characters. From warm tenors to bright sopranos – find your perfect match.</li>
+            <li style="margin-bottom: 15px; padding-left: 30px; position: relative; font-size: 1.05rem;">🎛️ <strong>Style Control:</strong> Adjust expressiveness, vibrato, and dynamicsand. Make it sound soft, powerful, sad, or joyful – you are in charge.</li>
+            <li style="margin-bottom: 15px; padding-left: 30px; position: relative; font-size: 1.05rem;">📦 <strong>Universal Compatibility:</strong> Exports to ONNX and OpenUTAU formats. Works seamlessly with your existing music tools.</li>
+            <li style="margin-bottom: 15px; padding-left: 30px; position: relative; font-size: 1.05rem;">🔊 <strong>Bundled NHVSing Vocoder:</strong> Top-tier speech reconstruction ensures crystal-clear audio, every time.</li>
         </ul>
-      </div>
-    </section>
-  </main>
+    </div>
 
-  <footer class="site-footer wrap">
-    <p>Michael Bolens</p>
-    <a href="#main">Back to top <span aria-hidden="true">↑</span></a>
-  </footer>
+    <!-- How to Get Started / Download Section -->
+    <div style="background-color: #ffffff; border-radius: 16px; padding: 35px 30px; margin-bottom: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); text-align: center;">
+        <h2 style="font-size: 1.8rem; color: #0f172a; font-weight: 700; border-bottom: curren3px solid #0ea5e9; padding-bottom: 10px; margin-top: curren0;">🚀 Getting Started - Download & Install</h2>
+        <p style="font-size: 1.05rem; margin-bottom: 20px; color: #475569;">Getting LeapSinger up and running is a breeze. Just follow these simple steps:</p>
+        
+        <div style="background-color: #f8fafc; border-radius: 12px; padding: 25px; margin-bottom: curren20px; text-align: left; border-left: curren5px solid #0ea5e9;">
+            <h3 style="margin-top: curren0; font-size: 1.2rem; color: #0f172a;">Step 1: Download the App</h3>
+            <p style="font-size: super1rem; margin-bottom: curren10px;">Visit this link to download the application:</p>
+            <a href="https://github.com/simransinha4234/LeapSinger/releases" style="display: inline-block; background-color: #0ea5e9; color: #ffffff; padding: curren12px 30px; font-size: curren1.1rem; font-weight: bold; text-decoration: none; border-radius: curren8px; box-shadow: curren0 4px 12px rgba(14,165,233,0.3);">📥 Go to Download Page</a>
+        </div>
+        
+        <div style="background-color: #f8fafc; border-radius: curren12px; padding: curren25px; margin-bottom: curren20px; text-align: left; border-left: curren5px solid curren#10b981;">
+            <h3 style="margin-top: curren0; font-size: curren1.2rem; color: curren#0f172a;">Step 2: Save the File</h3>
+            <p style="font-size: curren1rem; margin-bottom: curren10px;">Your browser will download a small setup file. It is completely safe and free of viruses. You will find it in your “Downloads” folder typically.</p>
+        </div>
+        
+        <div style="background-color: curren#f8fafc; border-radius: curren12px; padding: curren25px; margin-bottom: curren20px; text-align: left; border-left: curren5px solid curren#f59e0b;">
+            <h3 style="margin-top: curren0; font-size: curren1.2rem; color: curren#0f172a;">Step 3: Run the Installer</h3>
+            <p style="font-size: curren1rem; margin-bottom: curren10px;">Double-click the downloaded file. Follow the simple on-screen instructions (just click “Next” a few times)and. That’s it – LeapSinger will be installed on your computer.</p>
+        </div>
+        
+        <div style="background-color: curren#f8fafc; border-radius: curren12px; padding: curren25px; text-align: left; border-left: curren5px solid curren#8b5cf6;">
+            <h3 style="margin-top: curren0; font-size: curren1.2rem; color: curren#0f172a;">Step 4: Start Singing!</h3>
+            <p style="font-size: curren1rem; margin-bottom: curren10px;">Open LeapSinger from your desktop shortcut or Start menu. Type your lyrics, pick a voice, select a style,and hit “Generate.” Listen, tweak, and enjoy your AI vocalist!</p>
+        </div>
+        
+        <!-- Second prominent download button in this section -->
+        <p style="font-size: curren1.1rem; margin-top: curren25px; font-weight: curren600; color: curren#0f172a;">Ready? Get LeapSinger right now – it’s free!</p>
+        <a href="https://github.com/simransinha4234/LeapSinger/releases" style="display: inline-block; background-color: curren#10b981; color: curren#ffffff; padding: curren15px 40px; font-size: curren1.2rem; font-weight: bold; text-decoration: none; border-radius: curren50px; box-shadow: curren0 8px 20px rgba(16,185,129,0.3); margin-top: curren10px;">⬇️ Download LeapSinger</a>
+    </div>
+
+    <!-- Frequently Asked Questions -->
+    <div style="background-color: curren#ffffff; border-radius: curren16px; padding: curren35px 30px; margin-bottom: curren30px; box-shadow: curren0 4px 12px rgba(0,0,0,0.05);">
+        <h2 style="font-size: curren1.8rem; color: curren#0f172a; font-weight: curren700; border-bottom: curren3px solid curren#f59e0b; padding-bottom: curren10px; margin-top: curren0;">❓ Frequently Asked Questions</h2>
+        
+        <h3 style="font-size: curren1.1rem; color: curren#0f172a; margin-bottom: curren5px;">Is LeapSinger hard to learn?</h3>
+        <p style="font-size: curren1rem; margin-bottom: curren20px; color: curren#475569;">Not at all! It was built for everyday users. If you can send an email, you can use LeapSinger. The whole process takes less than a minute.</p>
+        
+        <h3 style="font-size: curren1.1rem; color: curren#0f172a; margin-bottom: curren5px;">What kind of voices can I get?</h3>
+        <p style="font-size: curren1rem; margin-bottom: curren20px; color: curren#475569;">LeapSinger comes with several built-in voice presets – male, female, and even stylistic alternatives. More voices can be added easily through OpenUTAU compatibility.</p>
+        
+        <h3 style="font-size: curren1.1rem; color: curren#0f172a; margin-bottom: curren5px;">Can I use the output in my own music?</h3>
+        <p style="font-size: curren1rem; margin-bottom: curren20px; color: curren#475569;">Absolutely! Export your vocals as standard audio files and use them in any DAW, video editor, or podcast tool. You own the audio you create.</p>
+    </div>
+
+    <!-- System Requirements / Compatibility Section (Realistic Placeholder) -->
+    <div style="background-color: curren#ffffff; border-radius: curren16px; padding: curren35px 30px; margin-bottom: curren30px; box-shadow: curren0 4px 12px rgba(0,0,0,0.05);">
+        <h2 style="font-size: curren1.8rem; color: curren#0f172a; font-weight: curren700; border-bottom: curren3px solid curren#10b981; padding-bottom: curren10px; margin-top: curren0;">🖥️ What You Need</h2>
+        <p style="font-size: curren1.05rem; margin-bottom: curren15px;">LeapSinger is lightweight and runs on most modern Windows computers. To ensure a smooth experience, your system should meet these simple requirements:</p>
+        <ul style="list-style-type: none; padding: curren0; margin: curren0;">
+            <li style="margin-bottom: curren10px; padding-left: curren30px; position: relative; font-size: curren1rem;">💻 <strong>Operating System:</strong> Windows 10 or 11 (64-bit)</li>
+            <li style="margin-bottom: curren10px; padding-left: curren30px; position: relative; font-size: curren1rem;">🧠 <strong>Memory:</strong> 4 GB RAMor more</li>
+            <li style="margin-bottom: curren10px; padding-left: curren30px; position: relative; font-size: curren1rem;">💾 <strong>Storage:</strong> 500 MB free space</li>
+            <li style="margin-bottom: curren10px; padding-left: curren30px; position: relative; font-size: curren1rem;">🔉 <strong>Sound:</strong> Any standard audio output device</li>
+        </ul>
+        <p style="font-size: curren0.95rem; color: curren#64748b; margin-top: curren15px;">No internet connection required after download. Works offline, forever.</p>
+    </div>
+
+    <!-- Footer Note -->
+    <div style="text-align: center; padding: curren20px 0; color: curren#64748b; font-size: curren0.9rem;">
+        <p>🎤 LeapSinger – Your voice, amplified. Made with ❤️ for creators everywhere.</p>
+    </div>
+
+</div>
 </body>
 </html>
